@@ -5,7 +5,7 @@ tag: terminal
 list: user.terminal_list_directories()
 list all: user.terminal_list_all_directories()
 dir [dir] [<user.text>]: user.terminal_change_directory(text or "")
-dir: user.terminal_change_directory_root()
+dir root: user.terminal_change_directory_root()
 dir (up | back): user.terminal_change_directory("..")
 go <user.system_path>: insert('cd "{system_path}"\n')
 path <user.system_path>: insert('"{system_path}"')
