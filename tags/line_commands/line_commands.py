@@ -7,7 +7,6 @@ mod.tag(
     desc="Tag for enabling generic line navigation and selection commands",
 )
 
-
 @mod.action_class
 class Actions:
     def extend_until_line(line: int):
