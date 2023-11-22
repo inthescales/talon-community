@@ -43,11 +43,11 @@ tab [line] <number>:
 tab <number> through <number>:
     user.select_range(number_1, number_2)
     edit.indent_more()
-retab that: edit.indent_less()
-retab [line] <number>:
+detab that: edit.indent_less()
+detab [line] <number>:
     user.select_range(number, number)
     edit.indent_less()
-retab <number> through <number>:
+detab <number> through <number>:
     user.select_range(number_1, number_2)
     edit.indent_less()
 drag [line] down: edit.line_swap_down()
