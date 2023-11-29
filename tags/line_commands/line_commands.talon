@@ -31,6 +31,9 @@ cut [line] <number>:
 cut [line] <number> through <number>:
     user.select_range(number_1, number_2)
     edit.cut()
+(paste | replace) [line] <number>:
+    user.select_range(number, number)
+    edit.paste()
 (paste | replace) <number> through <number>:
     user.select_range(number_1, number_2)
     edit.paste()
