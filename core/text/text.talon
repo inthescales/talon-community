@@ -1,10 +1,16 @@
 #provide both anchored and unachored commands via 'over'
-phrase <user.text>$:
+literal <user.text>$:
     user.add_phrase_to_history(text)
     insert(text)
-phrase <user.text> over:
+literal <user.text> over:
     user.add_phrase_to_history(text)
     insert(text)
+phrase <user.prose>$:
+    user.add_phrase_to_history(prose)
+    insert(prose)
+phrase <user.prose> over:
+    user.add_phrase_to_history(prose)
+    insert(prose)
 {user.prose_formatter} <user.prose>$: user.insert_formatted(prose, prose_formatter)
 {user.prose_formatter} <user.prose> over: user.insert_formatted(prose, prose_formatter)
 <user.format_code>+$: user.insert_many(format_code_list)

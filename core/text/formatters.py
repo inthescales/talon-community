@@ -186,9 +186,8 @@ code_formatter_names = {
     "cite string": "SINGLE_QUOTED_STRING",
 }
 prose_formatter_names = {
-    "say": "NOOP",
-    "speak": "NOOP",
     "sentence": "CAPITALIZE_FIRST_WORD",
+    "shout": "ALL_CAPS",
     "title": "CAPITALIZE_ALL_WORDS",
 }
 # Mapping from spoken phrases to formatters

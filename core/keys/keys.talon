@@ -1,6 +1,8 @@
 go <user.arrow_keys>: user.move_cursor(arrow_keys)
 <user.letter>: key(letter)
-(ship | uppercase) <user.letters> [(lowercase | sunk)]:
+big <user.letter>:
+    user.insert_formatted(letter, "ALL_CAPS")
+acro <user.letters> [over]:
     user.insert_formatted(letters, "ALL_CAPS")
 <user.symbol_key>: key(symbol_key)
 <user.function_key>: key(function_key)
